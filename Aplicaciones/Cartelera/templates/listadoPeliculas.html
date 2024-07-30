@@ -1,0 +1,24 @@
+<table class="table table-bordered table-striped table-nover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TITULO</th>
+            <th>DURACION</th>
+            <th>SIPNOSIS</th>
+            <th>GENERO</th>
+            <th>DIRECTOR</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for peliculasTemporal in peliculas %}
+        <tr>
+            <td>{{peliculasTemporal.id}}</td>
+            <td>{{peliculasTemporal.titulo}}</td>
+            <td>{{peliculasTemporal.duracion}}</td>
+            <td>{{peliculasTemporal.sinopsis}}</td>
+            <td>{{peliculasTemporal.genero}}</td>
+            <td>{{peliculasTemporal.director}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

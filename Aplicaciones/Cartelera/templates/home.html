@@ -1,0 +1,88 @@
+{% extends "./plantilla.html" %}
+{% load static %}
+{% block body%}
+<img src="{% static 'img/cine.jpg' %}" alt="No se encontro">
+<h1>HOLA MUNDO DESDE DJANGO :) </h1>
+<!--Poner un Carrusel y adebajo una mision y vision-->
+<div id="carouselExampleIndicators" 
+class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/1.jpg' %}" class="d-block w-100" style="height: 470px;" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/2.jpg' %}" class="d-block w-100" style="height: 470px;" >
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/3.jpg' %}" class="d-block w-100" style="height: 470px;" >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="container my-5">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Misión</h2>
+                        <p class="card-text">Nuestra misión es diseñar y desarrollar aplicaciones web eficientes, seguras y fáciles de usar, que superen las expectativas de nuestros clientes. Nos comprometemos a ofrecer un servicio excepcional, fomentando la creatividad y el crecimiento continuo de nuestro equipo, y manteniendo un enfoque en la sostenibilidad y el impacto positivo en la comunidad global.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Visión</h2>
+                        <p class="card-text">Ser líderes globales en la creación de soluciones web innovadoras y de alta calidad, que transformen negocios y mejoren la vida de las personas mediante el uso de tecnología de vanguardia.</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br>
+                        &nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
+<style>
+    body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif;
+    color: #007bff;
+}
+
+.card-text {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 2rem;
+}
+</style>
+
+{% endblock %}
+
