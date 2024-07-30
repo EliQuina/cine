@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-2ugp$r(2l9@5^0v%c&e^u-586oup($*3agj#)e+lmfzmr5scb+
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'cineutc-jhik.onrender.com').split(',')
 
 
 # Application definition
